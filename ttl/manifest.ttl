@@ -1,0 +1,97 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
+@prefix midi:  <http://lv2plug.in/ns/ext/midi#> .
+@prefix ui:    <http://lv2plug.in/ns/extensions/ui#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix worker: <http://lv2plug.in/ns/ext/worker#> .
+@prefix urid:  <http://lv2plug.in/ns/ext/urid#> .
+@prefix opts:  <http://lv2plug.in/ns/ext/options#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+# doap:name = lo que Ardour pone en la barra de titulo del plugin.
+# Incluye version y autor a proposito (Ardour a menudo ignora foaf
+# y muestra "(by unknown)").
+<https://brania.org/plugins/blazmidicurve>
+    a lv2:Plugin ,
+      doap:Project ;
+    lv2:binary <midicurve_lv2.so> ;
+    doap:name "BlazMidiCurve v2.0.0 (blazman)" ;
+    doap:shortdesc "Utilidades MIDI - Editor de curva de velocidad" ;
+    rdfs:comment "Map MIDI Note On velocities through a user-editable 2D curve. Author: blazman. Category: Utilidades MIDI." ;
+    lv2:minorVersion 2 ;
+    lv2:microVersion 0 ;
+    doap:maintainer [
+        a foaf:Person ;
+        foaf:name "blazman" ;
+        doap:name "blazman"
+    ] ;
+    doap:license <http://opensource.org/licenses/MIT> ;
+    doap:developer [
+        a foaf:Person ;
+        foaf:name "blazman" ;
+        doap:name "blazman"
+    ] ;
+    doap:category <http://lv2plug.in/ns/lv2core#UtilityPlugin> ;
+    lv2:requiredFeature urid:map ;
+    lv2:optionalFeature worker:schedule ;
+    lv2:optionalFeature state:loadDefaultState ;
+    lv2:extensionData state:interface ;
+    lv2:extensionData worker:interface ;
+
+    lv2:port [
+        a lv2:InputPort ,
+          atom:AtomPort ;
+        atom:bufferType atom:Sequence ;
+        atom:supports midi:MidiEvent ;
+        lv2:index 0 ;
+        lv2:symbol "midi_in" ;
+        lv2:name "MIDI In"
+    ] ;
+
+    lv2:port [
+        a lv2:OutputPort ,
+          atom:AtomPort ;
+        atom:bufferType atom:Sequence ;
+        atom:supports midi:MidiEvent ;
+        lv2:index 1 ;
+        lv2:symbol "midi_out" ;
+        lv2:name "MIDI Out"
+    ] ;
+
+    lv2:port [
+        a lv2:OutputPort ,
+          atom:AtomPort ;
+        atom:bufferType atom:Sequence ;
+        atom:supports atom:String ;
+        lv2:index 2 ;
+        lv2:symbol "ui_notify" ;
+        lv2:name "UI Notify"
+    ] ;
+
+    lv2:port [
+        a lv2:InputPort ,
+          atom:AtomPort ;
+        atom:bufferType atom:Sequence ;
+        atom:supports atom:String ;
+        lv2:index 3 ;
+        lv2:symbol "ui_request" ;
+        lv2:name "UI Request"
+    ] ;
+
+    ui:ui <https://brania.org/plugins/blazmidicurve#ui> .
+
+<https://brania.org/plugins/blazmidicurve#ui>
+    a ui:X11UI ;
+    ui:binary <midicurve_lv2.so> ;
+    ui:plugin <https://brania.org/plugins/blazmidicurve> ;
+    lv2:requiredFeature urid:map ;
+    lv2:optionalFeature worker:schedule ;
+    ui:requiredFeature ui:parent ;
+    lv2:extensionData ui:idleInterface ;
+    ui:portNotification [
+        ui:plugin <https://brania.org/plugins/blazmidicurve> ;
+        lv2:symbol "ui_notify"
+    ] .

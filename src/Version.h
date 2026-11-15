@@ -1,17 +1,16 @@
-#pragma once
+// -----------------------------------------------------------------------------
+// src/Version.h
+//
+// Autor:      blazman
+// Licencia:   MIT
+// Versión:    2.0.0
+// Fecha:      2026-11-15
+//
+// Información de versión y metadatos del plugin.
+// Única fuente de verdad para la versión del plugin.
+// -----------------------------------------------------------------------------
 
-// ============================================================
-// BlazMidiCurve - Informacion de version
-//
-// Autor:  blazman
-// Tipo:   Utilidades MIDI
-//
-// Unica fuente de verdad para la version del plugin.
-// Formato: MAJOR.MINOR.PATCH
-//   - MAJOR: cambios incompatibles
-//   - MINOR: nuevas funcionalidades
-//   - PATCH: correcciones / subversiones
-// ============================================================
+#pragma once
 
 #define BLAZMIDICURVE_NAME           "BlazMidiCurve"
 #define BLAZMIDICURVE_AUTHOR         "blazman"

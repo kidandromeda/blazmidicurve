@@ -1,3 +1,14 @@
+// -----------------------------------------------------------------------------
+// src/core/MidiProcessor.h
+//
+// Autor:      blazman
+// Licencia:   MIT
+// Versión:    2.0.0
+// Fecha:      2026-11-15
+//
+// Procesador MIDI en tiempo real: modifica solo la velocidad de NOTE ON.
+// -----------------------------------------------------------------------------
+
 #pragma once
 
 #include <cstdint>

@@ -1,10 +1,13 @@
-// ============================================================
-// BlazMidiCurve v2.0.0
-// Autor: blazman
-// Tipo:  Utilidades MIDI
+// -----------------------------------------------------------------------------
+// src/core/Interpolator.cpp
 //
-// Genera la tabla de 128 valores (LUT) interpolando los nodos.
-// ============================================================
+// Autor:      blazman
+// Licencia:   MIT
+// Versión:    2.0.0
+// Fecha:      2026-11-15
+//
+// Generación de la LUT interpolando los nodos de la curva.
+// -----------------------------------------------------------------------------
 
 #include "Interpolator.h"
 #include <cstdio>

@@ -1,3 +1,14 @@
+# -----------------------------------------------------------------------------
+# tests/CMakeLists.txt
+#
+# Autor:      blazman
+# Licencia:   MIT
+# Versión:    2.0.0
+# Fecha:      2026-11-15
+#
+# Configuración de pruebas unitarias y de integración.
+# -----------------------------------------------------------------------------
+
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(LILV IMPORTED_TARGET lilv-0)
 

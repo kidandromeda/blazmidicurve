@@ -1,3 +1,14 @@
+// -----------------------------------------------------------------------------
+// src/lv2/MidiCurveUI.h
+//
+// Autor:      blazman
+// Licencia:   MIT
+// Versión:    2.0.0
+// Fecha:      2026-11-15
+//
+// Definiciones de la interfaz gráfica X11/Cairo del plugin.
+// -----------------------------------------------------------------------------
+
 #pragma once
 
 #include <cstdint>

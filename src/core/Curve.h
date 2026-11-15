@@ -1,3 +1,14 @@
+// -----------------------------------------------------------------------------
+// src/core/Curve.h
+//
+// Autor:      blazman
+// Licencia:   MIT
+// Versión:    2.0.0
+// Fecha:      2026-11-15
+//
+// Modelo de datos de la curva de velocidad (nodos ordenados por X).
+// -----------------------------------------------------------------------------
+
 #pragma once
 
 #include <cstdint>

@@ -1,3 +1,14 @@
+# -----------------------------------------------------------------------------
+# ttl/manifest.ttl
+#
+# Autor:      blazman
+# Licencia:   MIT
+# Versión:    2.0.0
+# Fecha:      2026-11-15
+#
+# Manifiesto LV2 del plugin BlazMidiCurve y su interfaz gráfica.
+# -----------------------------------------------------------------------------
+
 @prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
 @prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
 @prefix midi:  <http://lv2plug.in/ns/ext/midi#> .

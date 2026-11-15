@@ -1,3 +1,14 @@
+// -----------------------------------------------------------------------------
+// src/lv2/uris.h
+//
+// Autor:      blazman
+// Licencia:   MIT
+// Versión:    2.0.0
+// Fecha:      2026-11-15
+//
+// URIs y utilidades de mapeo LV2 compartidas.
+// -----------------------------------------------------------------------------
+
 #pragma once
 
 #include <lv2/atom/atom.h>

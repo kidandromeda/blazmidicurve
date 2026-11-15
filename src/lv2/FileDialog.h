@@ -1,3 +1,14 @@
+// -----------------------------------------------------------------------------
+// src/lv2/FileDialog.h
+//
+// Autor:      blazman
+// Licencia:   MIT
+// Versión:    2.0.0
+// Fecha:      2026-11-15
+//
+// Diálogo modal X11 para guardar y cargar presets.
+// -----------------------------------------------------------------------------
+
 #pragma once
 
 #include <string>

@@ -1,3 +1,14 @@
+// -----------------------------------------------------------------------------
+// tests/TestCurve.cpp
+//
+// Autor:      blazman
+// Licencia:   MIT
+// Versión:    2.0.0
+// Fecha:      2026-11-15
+//
+// Pruebas unitarias del modelo de curva.
+// -----------------------------------------------------------------------------
+
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>

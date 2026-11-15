@@ -1,3 +1,14 @@
+# -----------------------------------------------------------------------------
+# CMakeLists.txt
+#
+# Autor:      blazman
+# Licencia:   MIT
+# Versión:    2.0.0
+# Fecha:      2026-11-15
+#
+# Configuración de compilación e instalación del plugin LV2.
+# -----------------------------------------------------------------------------
+
 cmake_minimum_required(VERSION 3.16)
 project(BlazMidiCurve VERSION 2.0.0 LANGUAGES CXX)
 

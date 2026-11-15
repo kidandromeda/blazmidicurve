@@ -1,11 +1,13 @@
-// ============================================================
-// BlazMidiCurve v2.0.0
-// Autor: blazman
-// Tipo:  Utilidades MIDI
+// -----------------------------------------------------------------------------
+// src/lv2/MidiCurveUI.cpp
 //
-// Interfaz grafica X11/Cairo del plugin LV2.
-// Persistencia v2.0.0: write_function al puerto 3 (sin worker).
-// ============================================================
+// Autor:      blazman
+// Licencia:   MIT
+// Versión:    2.0.0
+// Fecha:      2026-11-15
+//
+// Interfaz gráfica X11/Cairo y comunicación UI-plugin.
+// -----------------------------------------------------------------------------
 
 #include "MidiCurveUI.h"
 #include "FileDialog.h"

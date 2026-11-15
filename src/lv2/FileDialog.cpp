@@ -1,10 +1,13 @@
-// ============================================================
-// BlazMidiCurve v2.0.0
-// Autor: blazman
-// Tipo:  Utilidades MIDI
+// -----------------------------------------------------------------------------
+// src/lv2/FileDialog.cpp
 //
-// Dialogo modal de archivos X11 para guardar/cargar presets.
-// ============================================================
+// Autor:      blazman
+// Licencia:   MIT
+// Versión:    2.0.0
+// Fecha:      2026-11-15
+//
+// Implementación del diálogo modal de archivos X11.
+// -----------------------------------------------------------------------------
 
 #include "FileDialog.h"
 #include <algorithm>

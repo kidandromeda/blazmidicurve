@@ -1,15 +1,13 @@
-// ============================================================
-// BlazMidiCurve v2.0.0
-// Autor: blazman
-// Tipo:  Utilidades MIDI
+// -----------------------------------------------------------------------------
+// src/lv2/MidiCurvePlugin.cpp
 //
-// Plugin LV2: mapea velocidades MIDI Note On mediante una
-// curva 2D editable.
+// Autor:      blazman
+// Licencia:   MIT
+// Versión:    2.0.0
+// Fecha:      2026-11-15
 //
-// Persistencia (v2.0.0): la UI envia la curva al plugin por
-// write_function al puerto ui_request (NO por worker). El
-// plugin la guarda en state_json y la expone via state_save.
-// ============================================================
+// Implementación del plugin LV2: DSP, estado y persistencia de la curva.
+// -----------------------------------------------------------------------------
 
 #include "MidiCurvePlugin.h"
 #include "src/Version.h"

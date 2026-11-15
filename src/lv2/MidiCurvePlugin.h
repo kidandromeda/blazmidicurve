@@ -1,3 +1,14 @@
+// -----------------------------------------------------------------------------
+// src/lv2/MidiCurvePlugin.h
+//
+// Autor:      blazman
+// Licencia:   MIT
+// Versión:    2.0.0
+// Fecha:      2026-11-15
+//
+// Definiciones y estado interno del plugin LV2 BlazMidiCurve.
+// -----------------------------------------------------------------------------
+
 #pragma once
 
 #include <cstdint>

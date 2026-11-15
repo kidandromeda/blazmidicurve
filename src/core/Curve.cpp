@@ -1,10 +1,13 @@
-// ============================================================
-// BlazMidiCurve v2.0.0
-// Autor: blazman
-// Tipo:  Utilidades MIDI
+// -----------------------------------------------------------------------------
+// src/core/Curve.cpp
 //
-// Modelo de datos de la curva (nodos ordenados por X).
-// ============================================================
+// Autor:      blazman
+// Licencia:   MIT
+// Versión:    2.0.0
+// Fecha:      2026-11-15
+//
+// Implementación del modelo de datos de la curva de velocidad.
+// -----------------------------------------------------------------------------
 
 #include "Curve.h"
 #include <algorithm>
